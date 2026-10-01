@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie - Streamix</title>
+
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="min-h-screen bg-black text-white">
+
+    <header class="fixed top-0 z-50 flex w-full items-center justify-between bg-black/80 px-[5%] py-5">
+
+        <a href="browse.html"
+            class="text-2xl font-extrabold text-red-600">
+            STREAMIX
+        </a>
+
+        <a href="browse.html"
+            class="rounded bg-white px-4 py-2 font-bold text-black">
+            ← Back
+        </a>
+
+    </header>
+
+
+    <main class="flex min-h-screen flex-col items-center gap-10 px-[5%] pb-16 pt-32 md:flex-row md:justify-center">
+
+        <img
+            id="movieImage"
+            src=""
+            alt=""
+            class="w-56 rounded-lg shadow-2xl md:w-72"
+        >
+
+
+        <div class="max-w-2xl">
+
+            <p class="mb-3 font-bold tracking-widest text-red-600">
+                STREAMIX MOVIE
+            </p>
+
+            <h1
+                id="movieTitle"
+                class="mb-5 text-4xl font-bold md:text-6xl">
+            </h1>
+
+            <p
+                id="movieMeta"
+                class="mb-5 text-gray-300">
+            </p>
+
+            <p
+                id="movieDescription"
+                class="mb-8 leading-relaxed text-gray-300">
+            </p>
+
+
+            <button
+                id="trailerBtn"
+                class="rounded bg-white px-6 py-3 font-bold text-black hover:bg-gray-200">
+                ▶ Watch Trailer
+            </button>
+
+
+            <div
+                id="trailerContainer"
+                class="mt-8 hidden w-full max-w-2xl"
+            >
+
+                <iframe
+                    id="trailerFrame"
+                    class="aspect-video w-full rounded-lg"
+                    src=""
+                    title="Movie trailer"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

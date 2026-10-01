@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse - Streamix</title>
+
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 z-50 flex h-[70px] w-full items-center gap-10 bg-black/85 px-[5%]">
+
+        <a href="index.html"
+            class="text-2xl font-extrabold tracking-tight text-red-600">
+            STREAMIX
+        </a>
+
+        <nav class="hidden gap-6 md:flex">
+
+            <a href="browse.html" class="text-gray-300 transition hover:text-white">
+                Home
+            </a>
+
+            <a href="#" class="text-gray-300 transition hover:text-white">
+                Movies
+            </a>
+
+            <a href="#" class="text-gray-300 transition hover:text-white">
+                TV Shows
+            </a>
+
+            <a href="#" class="text-gray-300 transition hover:text-white">
+                My List
+            </a>
+
+        </nav>
+
+
+        <div class="ml-auto flex items-center gap-4">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search movies..."
+                class="w-32 rounded border border-gray-600 bg-gray-900 px-3 py-2 text-sm text-white outline-none placeholder:text-gray-400 focus:border-white sm:w-44"
+            >
+
+            <span class="text-xl">
+                👤
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- FEATURED -->
+        <section
+            class="flex min-h-[85vh] items-end bg-cover bg-center px-[5%] pb-16 pt-32 md:items-center"
+            style="
+                background-image:
+                linear-gradient(to right, rgba(0,0,0,.95), rgba(0,0,0,.55), rgba(0,0,0,.15)),
+                linear-gradient(to top, #000 0%, transparent 35%),
+                url('assets/images/hero.jpg');
+            "
+        >
+
+            <div class="max-w-2xl">
+
+                <p class="mb-4 text-sm font-bold tracking-[3px] text-red-600">
+                    STREAMIX ORIGINAL
+                </p>
+
+                <h1 class="mb-5 text-5xl font-bold leading-none md:text-7xl">
+                    The Last Horizon
+                </h1>
+
+                <p class="mb-5 text-gray-300">
+                    2026 &nbsp; • &nbsp; 16+ &nbsp; • &nbsp; 2h 14m
+                </p>
+
+                <p class="mb-8 max-w-xl text-base leading-relaxed text-gray-300 md:text-lg">
+                    After humanity discovers a mysterious signal from beyond
+                    the solar system, a group of explorers must uncover its
+                    origin before it disappears forever.
+                </p>
+
+
+                <div class="flex gap-3">
+
+                    <button
+                        class="rounded bg-white px-6 py-3 font-bold text-black transition hover:opacity-80">
+                        ▶ Play
+                    </button>
+
+                    <button
+                        class="rounded bg-gray-600/80 px-6 py-3 font-bold text-white transition hover:opacity-80">
+                        ⓘ More Info
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING -->
+        <section class="px-[5%] py-5">
+
+            <h2 class="mb-4 text-xl font-bold md:text-2xl">
+                Trending Now
+            </h2>
+
+            <div
+                id="trendingMovies"
+                class="flex gap-3 overflow-x-auto pb-4"
+            >
+            </div>
+
+        </section>
+
+
+        <!-- POPULAR -->
+        <section class="px-[5%] py-5">
+
+            <h2 class="mb-4 text-xl font-bold md:text-2xl">
+                Popular Movies
+            </h2>
+
+            <div
+                id="popularMovies"
+                class="flex gap-3 overflow-x-auto pb-4"
+            >
+            </div>
+
+        </section>
+
+
+        <!-- ACTION -->
+        <section class="px-[5%] py-5">
+
+            <h2 class="mb-4 text-xl font-bold md:text-2xl">
+                Action
+            </h2>
+
+            <div
+                id="actionMovies"
+                class="flex gap-3 overflow-x-auto pb-4"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
